@@ -16,7 +16,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--text-color );
-  position: absolute;  
   }
 ul {
   list-style: none;
@@ -63,6 +62,7 @@ img {
 }
 .contact-nav{  
   font-style: inherit;
+  font-weight: 500;
   line-height: calc(16/14); 
   letter-spacing: 0.02em; 
   color: var(--text-color); 
@@ -92,6 +92,7 @@ img {
   text-transform: uppercase
 }
 .hero-button{
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30/16);
@@ -102,6 +103,11 @@ img {
   display: inline-block;
   border-color: transparent;
   cursor: pointer;
+  background: var(--secondary-button-color);
+  color: var(--title-color);
+}
+.hero-button:hover, 
+.hero-button:focus {
   background: var(--accent-color);
   color: var(--primary-color);
 }
@@ -135,11 +141,23 @@ img {
   text-align: center;
   color: var(--title-color);
  }
-
+ .name{ 
+  line-height: calc(19/16);
+  text-align: center;
+}
+ .name-title{ 
+  font-size: 16px; 
+  font-weight: 500;
+  color: var(--title-color);
+}
+.team-category{ 
+  font-size: 16px;
+}
  /* ------PORTFOLIO SIDE------- */
  /* ------FILTER------- */
  
  .filter-button{
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26/16);
@@ -148,15 +166,15 @@ img {
   display: inline-block;
   border-color: transparent;
   cursor: pointer;
-}
-.filter-button.primary {
-  background: var(--accent-color);
-  color: var(--primary-color);
-}
-.filter-button.secondary {
   background: var(--secondary-button-color);
   color: var(--title-color);
 }
+.filter-button:hover, 
+.filter-button:focus {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
 /* -------PROJECT--------- */
 .prodject-title{
   font-weight: 700;
@@ -166,15 +184,15 @@ img {
   color: var(--title-color);
 }
 .prodject-category{
-    font-size: 16px;
+  font-size: 16px;
   line-height: calc(30/16);
   letter-spacing: 0.03em;
-  }
+ }
 
 /* -------FOOTER---------- */
 .footer {
   background: var(--second-color);
-  }
+}
  
 .adress{
   font-family: 'Roboto', sans-serif;
@@ -184,5 +202,9 @@ img {
 } 
   .contact {
   color: var(--next-text-color);
-  line-height: calc(24/14); }   
+  line-height: calc(24/14); }
+  .contact:hover, 
+  .contact:focus {
+  color: var(--accent-color);
+}   
 
